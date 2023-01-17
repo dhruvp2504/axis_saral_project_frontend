@@ -1,8 +1,8 @@
-import admin from "./pages/admin"
-import employeelogin from "./pages/employeelogin"
-import Navbar from "./navbar"
-import newfeed from "./pages/newfeed"
-import projectdetails from "./pages/projectdetails"
+import Admin from "./pages/Admin"
+import EmployeeLogin from "./pages/EmployeeLogin"
+
+import NewFeed from "./pages/NewFeed"
+import Projectdetails from "./pages/Projectdetails"
 import SalaryDetails from "./pages/SalaryDetails"
 import { Route, Routes } from "react-router-dom"
 
@@ -10,17 +10,20 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <div className="container">
-        <Routes>
-          {/* { <Route path="/" element={<Home />} /> } */}
-          <Route path="/newfeed" element={<newfeed />} />
-          <Route path="/projectdetails" element={<projectdetails />} />
-          <Route path="/SalaryDetails" element={<SalaryDetails />} />
-        </Routes>
-      </div>
+     
+      <Routes>
+        <Route path="/" element={<EmployeeLogin />} />
+        <Route path="/Admin" element={<Admin />} />
+        <Route path="/Newfeed" element={<NewFeed />} />
+        <Route path="/Projectdetails" element={<Projectdetails />} />
+        <Route path="/SalaryDetails" element={<SalaryDetails />} />
+
+
+      </Routes>
+
+
     </>
   )
 }
 
-export default App
+export default App;
