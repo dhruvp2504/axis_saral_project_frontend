@@ -1,10 +1,9 @@
-import Admin from "./pages/Admin"
-import EmployeeLogin from "./pages/EmployeeLogin"
-
-import NewFeed from "./pages/NewFeed"
-import Projectdetails from "./pages/Projectdetails"
-import SalaryDetails from "./pages/SalaryDetails"
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom";
+import AdminLogin from "./pages/AdminLogin";
+import EmployeeLogin from "./pages/EmployeeLogin";
+import NewsFeed from "./pages/NewsFeed";
+import ProjectDetails from "./pages/ProjectDetails";
+import SalaryDetails from "./pages/SalaryDetails";
 
 function App() {
 
@@ -13,10 +12,10 @@ function App() {
      
       <Routes>
         <Route path="/" element={<EmployeeLogin />} />
-        <Route path="/Admin" element={<Admin />} />
-        <Route path="/Newfeed" element={<NewFeed />} />
-        <Route path="/Projectdetails" element={<Projectdetails />} />
-        <Route path="/SalaryDetails" element={<SalaryDetails />} />
+        <Route path="/admin-login" element={<AdminLogin />} />
+        <Route path="/news-feed" element={<NewsFeed />} />
+        <Route path="/project-details" element={<ProjectDetails />} />
+        <Route path="/salary-details" element={<SalaryDetails />} />
 
 
       </Routes>
