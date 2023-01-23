@@ -3,14 +3,13 @@ import { Link } from "react-router-dom";
 import "./style.css";
 const EmployeeLogin = () => {
   return (
-    <div>
       <div class="content">
         <div class="text">Login Form</div>
 
         <div class="field">
           <span class="fas fa-user"></span>
           <input id="empid" type="text" required />
-          <label>Email or Employee ID</label>
+          <label>Employee Email ID</label>
         </div>
         <div class="field">
           <span class="fas fa-eye"></span>
@@ -32,7 +31,6 @@ const EmployeeLogin = () => {
         </p>
         <span />
       </div>
-    </div>
   );
 };
 

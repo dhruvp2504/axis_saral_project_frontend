@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./style.css";
 const AdminLogin = () => {
   return (
-    <div>
+    <div class="content">
       <div class="text">Admin Login</div>
 
       <div class="field">
@@ -23,7 +23,7 @@ const AdminLogin = () => {
       <p>
         Are u a Employee?
         <span />
-        <Link to={"/"}>Click Here</Link>
+        <a href="/" >Click Here</a>
       </p>
       <span />
     </div>
