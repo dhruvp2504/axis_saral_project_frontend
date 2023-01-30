@@ -21,7 +21,7 @@ const AdminLogin = () => {
       </div>
       <button>Sign in</button>
       <p>
-        Are u a Employee?
+        Are you a Employee?
         <span />
         <a href="/" >Click Here</a>
       </p>
