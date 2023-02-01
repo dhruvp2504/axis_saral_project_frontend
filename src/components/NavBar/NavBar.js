@@ -1,16 +1,16 @@
-import { Link, useNavigate } from "react-router-dom";
-import { isLogin, logOut} from "../../utils/CheckLogin";
-import classes from './NavBar.module.css';
+import { Link } from "react-router-dom";
+import { isLogin, logOut } from "../../utils/CheckLogin";
+import classes from "./NavBar.module.css";
 
 const Navbar = () => {
-  const nav = useNavigate();
   const handleClick = () => {
     logOut();
-    window.reload("/");
-  }
 
-return (
-<header className={classes.header}>
+    window.reload("/");
+  };
+
+  return (
+    <header className={classes.header}>
       <div>
         <nav>
           <ul>
@@ -19,8 +19,8 @@ return (
                 Axis Bank
               </Link>
             </li>
-                        <li>
-              <Link to={""}>Employees</Link>
+            <li>
+              <Link to={"/employee-list"}>Employees</Link>
             </li>
             <li>
               <Link to={"/policy-documents"}>Policy Documents</Link>
@@ -35,24 +35,24 @@ return (
               <Link to={""}>Our Services</Link>
             </li>
             <li>
-              {
-              isLogin?
-              <Link
-                to={""}
-                onClick={() => {
-                  handleClick();
-                }}
-              >
-                Log Out
-              </Link>:
-              <Link to="log-in">Log in</Link>
-              }
+              {isLogin ? (
+                <Link
+                  to={""}
+                  onClick={() => {
+                    handleClick();
+                  }}
+                >
+                  Log Out
+                </Link>
+              ) : (
+                <Link to="log-in">Log in</Link>
+              )}
             </li>
           </ul>
         </nav>
       </div>
     </header>
-);
+  );
 };
 
 export default Navbar;

@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./style.css";
+import "../style.css";
 const AdminLogin = () => {
   return (
     <div class="content">
@@ -17,13 +16,13 @@ const AdminLogin = () => {
         <label>Password</label>
       </div>
       <div class="forgot-pass">
-        <a href="#">Forgot Password?</a>
+        <a href="/">Forgot Password?</a>
       </div>
       <button>Sign in</button>
       <p>
         Are you a Employee?
         <span />
-        <a href="/" >Click Here</a>
+        <a href="/employee-login" >Click Here</a>
       </p>
       <span />
     </div>

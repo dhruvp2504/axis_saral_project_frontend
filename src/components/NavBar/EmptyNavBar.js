@@ -8,8 +8,12 @@ const EmptyNavBar = () => {
           <ul>
             <li>
               <Link to={"/"} className={classes.logo}>
-                Axis Bank
+                Axis Saral
               </Link>
+
+            </li>
+            <li>
+            <Link to={"/employee-login"} className={classes.login}>Log In</Link>
             </li>
           </ul>
         </nav>
