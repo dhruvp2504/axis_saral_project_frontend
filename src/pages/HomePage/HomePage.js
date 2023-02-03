@@ -1,5 +1,6 @@
 import React from 'react'
 import ImageSlider from './ImageSlider';
+import EmployeeLogin from '../LoginPages/EmployeeLogin'
 
 const HomePage = () => {
   const slides= [
@@ -19,6 +20,7 @@ const HomePage = () => {
   return (
     <div style={containerStyles}>
       <ImageSlider slides={slides} />
+      <EmployeeLogin />
       </div>
   );
 }
