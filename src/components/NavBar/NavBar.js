@@ -26,7 +26,7 @@ const Navbar = () => {
               <Link to={"/policy-documents"}>Policy Documents</Link>
             </li>
             <li>
-              <Link to={""}>My Documents</Link>
+              <Link to={"/my-documents"}>My Documents</Link>
             </li>
             <li>
               <Link to={""}>Projects</Link>
